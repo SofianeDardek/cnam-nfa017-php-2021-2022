@@ -1,3 +1,11 @@
 Demmarer un serv --> php -S localhost:8000
 
 "\n" retour à la ligne en php uniquement avec les double quotes ""
+
+
+
+composer info -a symfony/var-dumper  --> -a --> pas dans la machine met dans le navigateur.
+
+composer install quand il manque des fichieer.
+
+*.jpeg
