@@ -13,5 +13,9 @@
     echo '(En réalité il ne faut surtout pas le faire.)<br>';
     ?>
     
+    <?php
+     echo '<p> Du html dans du PHP<p>';
+    ?>
+    
 </body>
 </html>
