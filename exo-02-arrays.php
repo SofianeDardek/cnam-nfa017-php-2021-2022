@@ -40,8 +40,8 @@ $cartes = [
 
 $tailleTab = count($cartes);
 
-$tirage1 = random_int(1, $tailleTab-1);
-$tirage2 = random_int(1, $tailleTab-1);
+$tirage1 = random_int(1, $tailleTab);
+$tirage2 = random_int(1, $tailleTab);
 
 $tirages = [];
 
