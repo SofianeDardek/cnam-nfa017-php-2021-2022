@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__.'/vendor/autoload.php';
+
 /*
 Creéz un tableau contenant 5 cartes d'un jeu de 32 cartes à jouer.
 
@@ -23,6 +25,15 @@ $cartes = [
 
 $nbCartes = count($cartes);
 
-$number = random_int(0, $nbCartes-1);
+$number = random_int(1, 5);
 
-echo "Vous avez tiré la carte " . "<b>n°". "$number " . $cartes[$number] . "</b>";
+$remove = array_splice($cartes, $number-1, 1);
+
+dump($remove);
+
+$test = $cartes[0];
+
+
+echo "Vous avez tiré la carte " . "<b>n°". "$number " . $cartes[0] . "</b><br>";
+
+
