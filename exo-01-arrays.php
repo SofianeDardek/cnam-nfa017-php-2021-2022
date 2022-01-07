@@ -31,9 +31,9 @@ $remove = array_splice($cartes, $number-1, 1);
 
 dump($remove);
 
-$test = $cartes[0];
+$carteTire = $cartes[0];
 
 
-echo "Vous avez tiré la carte " . "<b>n°". "$number " . $cartes[0] . "</b><br>";
+echo "Vous avez tiré la carte  <b>n° $number $carteTire </b><br>";
 
 
