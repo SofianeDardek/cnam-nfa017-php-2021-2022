@@ -30,7 +30,7 @@ Attention, par convention la carte "as" (valeur 1) est la plus élevée.
 */
 
 $cartes = [
-    '6 coeur',
+    '1 coeur',
     '3 carreau',
     '4 treffle',
     '3 coeur',
