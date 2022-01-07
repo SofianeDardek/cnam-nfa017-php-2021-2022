@@ -21,6 +21,8 @@ $cartes = [
     '5 pique'
 ];
 
-$number = random_int(0, 4);
+$nbCartes = count($cartes);
+
+$number = random_int(0, $nbCartes-1);
 
 echo "Vous avez tiré la carte " . "<b>n°". "$number " . $cartes[$number] . "</b>";
