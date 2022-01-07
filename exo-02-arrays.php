@@ -64,14 +64,13 @@ dump($carte2);
 $valCarte1 = (int) $carte1[0];
 $valCarte2 = (int) $carte2[0];
 
-
-if($valCarte1 > $valCarte2 || $valCarte1 == 1){
+if($valCarte1 == $valCarte2){
+    echo "la carte $carte1 et $carte2 sont équivalentes";
+} elseif($valCarte1 > $valCarte2 || $valCarte1 == 1){
     echo "La carte $carte1 est supérieur à la carte $carte2";
 } elseif($valCarte2 < $valCarte1 || $valCarte2 == 1){
     echo "La carte $carte1 est supérieur à la carte $carte2";
-} elseif($valCarte1 == $valCarte2){
-    echo "la carte $carte1 et $carte2 sont équivalentes";
-} 
+}
 
 
 
