@@ -54,7 +54,7 @@ if($tirage1 == $tirage2){
 }
 
 $carte1 = array_splice($cartes, $tirage1-1, 1);
-$carte2 = array_splice($cartes, $tirage1-1, 1);
+$carte2 = array_splice($cartes, $tirage2-1, 1);
 
 $carte1 = $carte1[0];
 $carte2 = $carte2[0];
