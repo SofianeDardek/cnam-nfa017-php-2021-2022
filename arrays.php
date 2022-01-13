@@ -25,14 +25,14 @@ dump($fruits);
 $size = count($fruits);
 echo " il y a ". $size . " fruits";
 
-// enlver le premier element
+// enleve le premier element
 
 $fruitA = array_shift($fruits);
 
 dump($fruitA);
 dump($fruits);
 
-// enlever le dernier elements
+// enleve le dernier element
 
 $fruitF = array_pop($fruits);
 
@@ -45,9 +45,9 @@ array_splice($fruits, 1, 1, ['coing']);
 dump($fruits);
 
 
-// enlver un element 
 
-// @warbing la fonction unset ne reindexe pas le tbleu
+
+// @warning la fonction unset ne reindexe pas le tableau
 unset($fruits[2]);
 dump($fruits);
 
@@ -58,7 +58,7 @@ $vegetables = [
 ];
 
 
-// concaténation de deux tableau 
+// concaténation de deux tableaux
 $bigList = array_merge($fruits, $vegetables);
 
 dump($bigList);
@@ -70,3 +70,26 @@ if(!in_array('ananas', $bigList)){
 if(in_array('carotte', $bigList)){
     echo "il y a des carottes dans la liste";
 }
+
+$data = [
+    'nom' => 'Lorem',
+    'prenom' => 'Toto',
+    'age' => '12',
+    'email' => 'toto.lorem@example.com',
+    'validation' => true
+    
+];
+
+dump($data);
+
+// accès en lecture
+echo "Email: {$data['email']}";
+
+// accès en écriture
+$data['age'] = 12;
+
+// ajout d'un couple clé valeur
+$data['spammer'] = true;
+
+// supression d'un couple clé valeur
+unset($data['spammer']);

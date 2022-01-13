@@ -45,9 +45,13 @@ $tirage2 = random_int(1, $tailleTab);
 
 $tirages = [];
 
-array_push($tirages, $tirage1, $tirage2);
+//array_push($tirages, $tirage1, $tirage2);
+$tirages[] = $tirage1;
+$tirages[] = $tirage2;
 
-if($tirage1 == $tirage2){ echo 'Vous avez tiré le même chiffre'; exit();}
+if($tirage1 == $tirage2){ 
+    echo 'Vous avez tiré le même chiffre'; exit(); 
+}
 
 $carte1 = array_splice($cartes, $tirage1-1, 1);
 $carte2 = array_splice($cartes, $tirage1-1, 1);
