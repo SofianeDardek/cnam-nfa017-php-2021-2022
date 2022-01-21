@@ -8,7 +8,7 @@ Ensuite, utilisez une boucle foreach pour afficher tous les éléments du tablea
 
 $cartes = [];
 
-for($i = 0; $i <= 13; $i ++){
+for($i = 1; $i <= 13; $i ++){
     $cartes[] = "$i coeur";
 }
 

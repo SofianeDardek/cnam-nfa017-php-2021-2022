@@ -52,7 +52,7 @@ $colors = ['cœur', 'carreau', 'treffle', 'pique'];
 foreach($colors as $color){
     echo "$color<br>";
     
-    for($i = 0; $i < 13; $i++){
+    for($i = 1; $i <= 13; $i++){
         $cards[] = [
          'value' => $i,
          'color' => $color
